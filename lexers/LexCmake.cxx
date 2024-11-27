@@ -588,4 +588,5 @@ void SCI_METHOD LexerCmake::Fold(Sci_PositionU startPos, Sci_Position length, in
 
 LexerModule lmCmake(SCLEX_CMAKE, LexerCmake::LexerFactoryCmake, "cmake", cmakeWordLists);
 
+extern const LexerModule lmCmake(SCLEX_CMAKE, ColouriseCmakeDoc, "cmake", FoldCmakeDoc, cmakeWordLists);
 
